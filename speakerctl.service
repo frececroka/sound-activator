@@ -1,0 +1,8 @@
+[Unit]
+Description=Turn speakers on when sound is playing
+
+[Service]
+ExecStart=/usr/bin/python -u /opt/speakerctl/speakerctl.py
+
+[Install]
+WantedBy=multi-user.target
